@@ -79,6 +79,6 @@ Welcome to **ANotes**! 🎉 Your contributions are highly valued, whether you're
 ---
 
 ## 📜 License
-By contributing, you agree that your code will be licensed under the **Alex Personal License**.
+By contributing, you agree that your code will be licensed under the **ANotes Exclusive License**.
 
 Thank you for being part of the **ANotes** community! 💜
