@@ -96,7 +96,7 @@ We welcome contributions to **ANotes**! To get started:
 
 ## 🐝 License  
 
-This project is licensed under the **Alex Personal License**. See **[LICENSE](https://github.com/alexjoshva/ANotes/blob/main/LICENSE)** for details.
+This project is licensed under the **ANotes Exclusive License**. See **[LICENSE](https://github.com/alexjoshva/ANotes/blob/main/ANotes Exclusive License)** for details.
 
 ---
 
