@@ -2,7 +2,7 @@
 
 # 📝 ANotes – Simple. Fast. Smart.
 
-[![ANotes](https://github.com/user-attachments/assets/ce7cf3b7-d126-454c-ab51-07edf7671fac)](https://alexnotes.netlify.app/)
+![Screenshot 2025-03-13 155817](https://github.com/user-attachments/assets/926d909d-0c50-4926-b070-b17c87fcef8f)
 
 🚀 **ANotes** is a modern, lightweight, and intuitive note-taking application built with **Vite, React, and TypeScript**. Designed for speed and efficiency, it offers **powerful organization** and **seamless usability** to **capture, manage, and structure your notes effortlessly**.
 
