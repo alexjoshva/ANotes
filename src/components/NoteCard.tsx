@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
 import { Note } from '../types';
-import { Pin, Star, Trash2, Edit, Copy, Check, Lock, RotateCcw, XCircle, Eye } from 'lucide-react';
+import { Pin, Star, Trash2, Edit, Copy, Check, Lock, RotateCcw, XCircle, Eye, Download, ChevronDown } from 'lucide-react';
 import { useNotes } from '../context/NoteContext';
 import { NoteViewer } from './NoteViewer';
+import { downloadNote } from '../utils/downloadUtils';
+import { useOutsideClick } from '../hooks/useOutsideClick';
 
 interface NoteCardProps {
   note: Note;
@@ -11,8 +13,9 @@ interface NoteCardProps {
 
 export function NoteCard({ note, onEdit }: NoteCardProps) {
   const { updateNote, deleteNote, showPrivateNotes, restoreFromTrash, permanentlyDelete, showTrash } = useNotes();
-  const [copied, setCopied] = React.useState(false);
-  const [isViewing, setIsViewing] = React.useState(false);
+  const [copied, setCopied] = useState(false);
+  const [isViewing, setIsViewing] = useState(false);
+  const [showFormatOptions, setShowFormatOptions] = useState(false);
   
   const formattedDate = new Date(note.updatedAt).toLocaleDateString('en-US', {
     month: 'short',
@@ -32,7 +35,21 @@ export function NoteCard({ note, onEdit }: NoteCardProps) {
     }
   };
 
+  const handleDownload = async (format: 'txt' | 'pdf') => {
+    await downloadNote(note, { format });
+    setShowFormatOptions(false);
+  };
+
   const isContentVisible = !note.isPrivate || showPrivateNotes;
+
+  const handleCloseFormatOptions = useCallback(() => {
+    setShowFormatOptions(false);
+  }, []);
+
+  const formatOptionsRef = useOutsideClick({
+    onOutsideClick: handleCloseFormatOptions,
+    isOpen: showFormatOptions
+  });
 
   return (
     <>
@@ -118,6 +135,34 @@ export function NoteCard({ note, onEdit }: NoteCardProps) {
                   >
                     {copied ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
                   </button>
+                  <div className="relative" ref={formatOptionsRef}>
+                    <button
+                      onClick={() => setShowFormatOptions(!showFormatOptions)}
+                      className="p-1 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400 flex items-center gap-0.5"
+                      title="Download note"
+                    >
+                      <Download className="h-4 w-4" />
+                      <ChevronDown className="h-3 w-3" />
+                    </button>
+                    {showFormatOptions && (
+                      <div 
+                        className="absolute right-0 bottom-full mb-1 w-32 bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden z-50"
+                      >
+                        <button
+                          onClick={() => handleDownload('txt')}
+                          className="w-full px-3 py-1.5 text-left text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
+                        >
+                          Download TXT
+                        </button>
+                        <button
+                          onClick={() => handleDownload('pdf')}
+                          className="w-full px-3 py-1.5 text-left text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
+                        >
+                          Download PDF
+                        </button>
+                      </div>
+                    )}
+                  </div>
                   <button
                     onClick={() => setIsViewing(true)}
                     className="p-1 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"

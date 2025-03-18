@@ -1,6 +1,8 @@
-import React from 'react';
-import { X, Tag, Star, Lock, Clock } from 'lucide-react';
+import React, { useState, useCallback } from 'react';
+import { X, Tag, Star, Lock, Clock, Download, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { downloadNote } from '../utils/downloadUtils';
+import { useOutsideClick } from '../hooks/useOutsideClick';
 
 interface NoteViewerProps {
   note: {
@@ -16,6 +18,22 @@ interface NoteViewerProps {
 }
 
 export function NoteViewer({ note, onClose }: NoteViewerProps) {
+  const [showFormatOptions, setShowFormatOptions] = useState(false);
+
+  const handleCloseFormatOptions = useCallback(() => {
+    setShowFormatOptions(false);
+  }, []);
+
+  const formatOptionsRef = useOutsideClick({
+    onOutsideClick: handleCloseFormatOptions,
+    isOpen: showFormatOptions
+  });
+
+  const handleDownload = async (format: 'txt' | 'pdf') => {
+    await downloadNote(note, { format });
+    setShowFormatOptions(false);
+  };
+
   return (
     <AnimatePresence>
       <motion.div
@@ -58,12 +76,42 @@ export function NoteViewer({ note, onClose }: NoteViewerProps) {
                   )}
                 </div>
               </div>
-              <button
-                onClick={onClose}
-                className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
-              >
-                <X className="w-5 h-5 text-gray-500 dark:text-gray-300" />
-              </button>
+              <div className="flex items-center gap-2">
+                <div className="relative" ref={formatOptionsRef}>
+                  <button
+                    onClick={() => setShowFormatOptions(!showFormatOptions)}
+                    className="p-2 rounded-lg bg-blue-500 hover:bg-blue-600 text-white flex items-center gap-1 transition-colors"
+                  >
+                    <Download className="w-4 h-4" />
+                    <span className="text-sm">Download</span>
+                    <ChevronDown className="w-4 h-4" />
+                  </button>
+                  {showFormatOptions && (
+                    <div 
+                      className="absolute right-0 mt-2 w-32 bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden z-50"
+                    >
+                      <button
+                        onClick={() => handleDownload('txt')}
+                        className="w-full px-4 py-2 text-left text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
+                      >
+                        Download TXT
+                      </button>
+                      <button
+                        onClick={() => handleDownload('pdf')}
+                        className="w-full px-4 py-2 text-left text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors"
+                      >
+                        Download PDF
+                      </button>
+                    </div>
+                  )}
+                </div>
+                <button
+                  onClick={onClose}
+                  className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                >
+                  <X className="w-5 h-5 text-gray-500 dark:text-gray-300" />
+                </button>
+              </div>
             </div>
           </div>
 
