@@ -2,7 +2,7 @@
 
 # 📝 ANotes – Simple. Fast. Smart.
 
-![Screenshot 2025-03-13 155817](https://github.com/user-attachments/assets/926d909d-0c50-4926-b070-b17c87fcef8f)
+![image](https://github.com/user-attachments/assets/dfd3225e-65d5-49ca-9106-7ab051b9bd0b)
 
 🚀 **ANotes** is a modern, lightweight, and intuitive note-taking application built with **Vite, React, and TypeScript**. Designed for speed and efficiency, it offers **powerful organization** and **seamless usability** to **capture, manage, and structure your notes effortlessly**.
 
