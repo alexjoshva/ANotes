@@ -11,12 +11,13 @@ export interface Note {
   deletedAt?: string;
   createdAt: string;
   updatedAt: string;
+  viewCount?: number;
 }
 
 export interface NoteContextType {
   notes: Note[];
   addNote: (note: Omit<Note, 'id' | 'createdAt' | 'updatedAt'>) => void;
-  updateNote: (id: string, note: Partial<Note>) => void;
+  updateNote: (id: string, updates: Partial<Note>) => void;
   deleteNote: (id: string) => void;
   moveToTrash: (id: string) => void;
   restoreFromTrash: (id: string) => void;
@@ -39,4 +40,5 @@ export interface NoteContextType {
   deletePrivateSpace: () => void;
   isDarkMode: boolean;
   toggleDarkMode: () => void;
+  incrementViewCount: (id: string) => void;
 }

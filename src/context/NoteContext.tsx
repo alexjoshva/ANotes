@@ -143,6 +143,17 @@ export function NoteProvider({ children }: { children: React.ReactNode }) {
 
   const toggleDarkMode = () => setIsDarkMode(prev => !prev);
 
+  const incrementViewCount = (id: string) => {
+    setNotes(prev => prev.map(note =>
+      note.id === id
+        ? {
+            ...note,
+            viewCount: (note.viewCount || 0) + 1,
+          }
+        : note
+    ));
+  };
+
   return (
     <NoteContext.Provider value={{
       notes,
@@ -170,6 +181,7 @@ export function NoteProvider({ children }: { children: React.ReactNode }) {
       deletePrivateSpace,
       isDarkMode,
       toggleDarkMode,
+      incrementViewCount,
     }}>
       {children}
     </NoteContext.Provider>
