@@ -1,12 +1,12 @@
 <div align="center">
 
-# 📝 ANotes – Simple. Fast. Smart.
+# 📝 Quillon – Simple. Fast. Smart.
 
 ![image](https://github.com/user-attachments/assets/dfd3225e-65d5-49ca-9106-7ab051b9bd0b)
 
-🚀 **ANotes** is a modern, lightweight, and intuitive note-taking application built with **Vite, React, and TypeScript**. Designed for speed and efficiency, it offers **powerful organization** and **seamless usability** to **capture, manage, and structure your notes effortlessly**.
+🚀 **Quillon** is a modern, lightweight, and intuitive note-taking application built with **Vite, React, and TypeScript**. Designed for speed and efficiency, it offers **powerful organization** and **seamless usability** to **capture, manage, and structure your notes effortlessly**.
 
-🔗 **[Live Demo](https://alexnotes.netlify.app/)** | 🌟 **[Star on GitHub](https://github.com/alexjoshva/ANotes)**
+🔗 **[Live Demo](https://quillon.netlify.app/)** | 🌟 **[Star on GitHub](https://github.com/alexjoshva/Quillon)**
 
 </div>
 
@@ -35,18 +35,18 @@
 
 ---
 
-## 🚀 Getting Started – Run ANotes on Your Machine  
+## 🚀 Getting Started – Run Quillon on Your Machine  
 
 ### 🔥 **Clone & Set Up the Project**  
 
 #### 1⃣ Clone the Repository  
 ```bash
-git clone https://github.com/alexjoshva/ANotes.git
+git clone https://github.com/alexjoshva/Quillon.git
 ```
 
 #### 2⃣ Navigate to Project Directory  
 ```bash
-cd ANotes
+cd Quillon
 ```
 📌 **If you downloaded from the releases section**, navigate using:  
 ```bash
@@ -90,13 +90,13 @@ We welcome contributions to **ANotes**! To get started:
 🔹 Write meaningful commit messages.  
 🔹 Test changes thoroughly before submitting.  
 
-📜 See detailed contribution guidelines in the **[CONTRIBUTING.md](https://github.com/alexjoshva/ANotes/blob/main/CONTRIBUTING.md)** file.
+📜 See detailed contribution guidelines in the **[CONTRIBUTING.md](https://github.com/alexjoshva/Quillon/blob/main/CONTRIBUTING.md)** file.
 
 ---
 
 ## 🐝 License  
 
-This project is licensed under the **ANotes Exclusive License**. See **[LICENSE](https://github.com/alexjoshva/ANotes/blob/main/ANotes%20Exclusive%20License)** for details.
+This project is licensed under the **ANotes Exclusive License**. See **[LICENSE](https://github.com/alexjoshva/Quillon/blob/main/ANotes%20Exclusive%20License)** for details.
 
 ---
 
@@ -107,4 +107,4 @@ This project is licensed under the **ANotes Exclusive License**. See **[LICENSE]
 
 ---
 
-📌 **Follow the project, give it a** ⭐ **on [GitHub](https://github.com/alexjoshva/ANotes), and let’s build something amazing together!** 🎯  
+📌 **Follow the project, give it a** ⭐ **on [GitHub](https://github.com/alexjoshva/Quillon), and let’s build something amazing together!** 🎯  
