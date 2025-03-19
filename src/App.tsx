@@ -80,7 +80,7 @@ function NoteList() {
       <div className="max-w-[1500px] mx-auto py-4 sm:py-6 lg:py-8 px-4 sm:px-6">
         <div className="flex flex-col items-center gap-4 mb-6">
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 dark:text-white tracking-tight">
-            ANotes
+            Quillon
           </h1>
           
           <div className="flex items-center gap-2 w-full justify-center">
