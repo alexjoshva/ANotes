@@ -50,7 +50,7 @@ cd Quillon
 ```
 📌 **If you downloaded from the releases section**, navigate using:  
 ```bash
-cd ANotes-1.0.0  
+cd Quillon-1.0.0  
 # (Change version number for newer releases)
 ```
 
