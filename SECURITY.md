@@ -7,6 +7,8 @@ We currently support *ANotes v1.0.0*. Future updates will introduce new features
 | Version  | Status           |
 |----------|----------------|
 | *1.0.0*  | ✅ Supported  |
+| *1.1.0*  | ✅ Supported  |
+| *1.2.0*  | ✅ Supported  |
 | *< 1.0.0*  | ❌ Not Supported |
 
 ---
