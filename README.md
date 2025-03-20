@@ -1,4 +1,4 @@
-<div align="center">
+![Screenshot 2025-03-19 211635](https://github.com/user-attachments/assets/eb418397-d234-46bd-b1b7-b638126dd616)<div align="center">
 
 # 📝 Quillon – Simple. Fast. Smart.
 
@@ -12,7 +12,7 @@
 
 ---
 
-## ✨ Features That Make ANotes Stand Out  
+## ✨ Features That Make Quillon Stand Out  
 
 ✅ **Full CRUD Support** – Create, Read, Update, and Delete notes effortlessly.  
 🔒 **Private Notes** – Secure sensitive notes in a private section.  
