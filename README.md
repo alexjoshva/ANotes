@@ -35,7 +35,7 @@
 
 ---
 
-## 🚀 Getting Started – Run ANotes on Your Machine  
+## 🚀 Getting Started – Run Quillon on Your Machine  
 
 ### 🔥 **Clone & Set Up the Project**  
 
