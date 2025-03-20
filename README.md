@@ -1,12 +1,12 @@
 <div align="center">
 
-# 📝 ANotes – Simple. Fast. Smart.
+# 📝 Quillon – Simple. Fast. Smart.
 
-![image](https://github.com/user-attachments/assets/dfd3225e-65d5-49ca-9106-7ab051b9bd0b)
+![Screenshot 2025-03-19 211635](https://github.com/user-attachments/assets/3c341ef4-6416-495c-b5ff-ba63191a301b)
 
-🚀 **ANotes** is a modern, lightweight, and intuitive note-taking application built with **Vite, React, and TypeScript**. Designed for speed and efficiency, it offers **powerful organization** and **seamless usability** to **capture, manage, and structure your notes effortlessly**.
+🚀 **Quillon** is a modern, lightweight, and intuitive note-taking application built with **Vite, React, and TypeScript**. Designed for speed and efficiency, it offers **powerful organization** and **seamless usability** to **capture, manage, and structure your notes effortlessly**.
 
-🔗 **[Live Demo](https://alexnotes.netlify.app/)** | 🌟 **[Star on GitHub](https://github.com/alexjoshva/ANotes)**
+🔗 **[Live Demo](https://quillon.netlify.app/)** | 🌟 **[Star on GitHub](https://github.com/alexjoshva/Quillon)**
 
 </div>
 
@@ -41,16 +41,16 @@
 
 #### 1⃣ Clone the Repository  
 ```bash
-git clone https://github.com/alexjoshva/ANotes.git
+git clone https://github.com/alexjoshva/Quillon.git
 ```
 
 #### 2⃣ Navigate to Project Directory  
 ```bash
-cd ANotes
+cd Quillon
 ```
 📌 **If you downloaded from the releases section**, navigate using:  
 ```bash
-cd ANotes-1.0.0  
+cd Quillon-1.0.0  
 # (Change version number for newer releases)
 ```
 
@@ -78,7 +78,7 @@ npm run dev
 
 ## 🤝 Contributing  
 
-We welcome contributions to **ANotes**! To get started:
+We welcome contributions to **Quillon**! To get started:
 
 1. **Fork** the repository.
 2. **Create** a new branch (`git checkout -b feature/YourFeatureName`).
@@ -90,21 +90,21 @@ We welcome contributions to **ANotes**! To get started:
 🔹 Write meaningful commit messages.  
 🔹 Test changes thoroughly before submitting.  
 
-📜 See detailed contribution guidelines in the **[CONTRIBUTING.md](https://github.com/alexjoshva/ANotes/blob/main/CONTRIBUTING.md)** file.
+📜 See detailed contribution guidelines in the **[CONTRIBUTING.md](https://github.com/alexjoshva/Quillon/blob/main/CONTRIBUTING.md)** file.
 
 ---
 
 ## 🐝 License  
 
-This project is licensed under the **ANotes Exclusive License**. See **[LICENSE](https://github.com/alexjoshva/ANotes/blob/main/ANotes%20Exclusive%20License)** for details.
+This project is licensed under the **Quillon Exclusive License**. See **[LICENSE](https://github.com/alexjoshva/Quillon/blob/main/Quillon%20Exclusive%20License)** for details.
 
 ---
 
 ## 🎉 Acknowledgements  
 
 💙 Thanks to **Vite, React**, and the open-source community for making development seamless!  
-🙌 Special thanks to **YOU** for checking out **ANotes**! 🚀  
+🙌 Special thanks to **YOU** for checking out **Quillon**! 🚀  
 
 ---
 
-📌 **Follow the project, give it a** ⭐ **on [GitHub](https://github.com/alexjoshva/ANotes), and let’s build something amazing together!** 🎯  
+📌 **Follow the project, give it a** ⭐ **on [GitHub](https://github.com/alexjoshva/Quillon), and let’s build something amazing together!** 🎯  
