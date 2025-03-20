@@ -1,17 +1,17 @@
-<h1 align="center">Contributing to ANotes</h1>
+<h1 align="center">Contributing to Quillon</h1>
 
-Welcome to **ANotes**! 🎉 Your contributions are highly valued, whether you're fixing bugs, introducing new features, or improving documentation. Thank you for helping make ANotes better! 🚀
+Welcome to **Quillon**! 🎉 Your contributions are highly valued, whether you're fixing bugs, introducing new features, or improving documentation. Thank you for helping make ANotes better! 🚀
 
 ---
 
 ## 📌 How to Contribute
 
 ### 1️⃣ Fork & Clone the Repository
-1. Fork the repository by clicking the **Fork** button at the top-right corner of [ANotes Repository](https://github.com/alexjoshva/ANotes).
+1. Fork the repository by clicking the **Fork** button at the top-right corner of [Quillon Repository](https://github.com/alexjoshva/Quillon).
 2. Clone your fork locally:
    ```bash
-   git clone https://github.com/YOUR_GITHUB_USERNAME/ANotes.git
-   cd ANotes
+   git clone https://github.com/YOUR_GITHUB_USERNAME/Quillon.git
+   cd Quillon
    ```
 
 ### 2️⃣ Create a Feature Branch
@@ -33,7 +33,7 @@ Welcome to **ANotes**! 🎉 Your contributions are highly valued, whether you're
   ```
 
 ### 5️⃣ Submit a Pull Request (PR)
-1. Go to the [ANotes Repository](https://github.com/alexjoshva/ANotes).
+1. Go to the [Quillon Repository](https://github.com/alexjoshva/Quillon).
 2. Click **New Pull Request**.
 3. Select your branch and submit the PR for review.
 
@@ -71,7 +71,7 @@ Welcome to **ANotes**! 🎉 Your contributions are highly valued, whether you're
 
 ## 💡 Issues & Discussions
 
-- Check [existing issues](https://github.com/alexjoshva/ANotes/issues) before opening a new one.
+- Check [existing issues](https://github.com/alexjoshva/Quillon/issues) before opening a new one.
 - Describe issues clearly with **steps to reproduce**.
 - Use appropriate labels (**bug**, **enhancement**, **documentation**).
 - Engage in **discussions** via the **Discussions** tab.
@@ -79,6 +79,6 @@ Welcome to **ANotes**! 🎉 Your contributions are highly valued, whether you're
 ---
 
 ## 📜 License
-By contributing, you agree that your code will be licensed under the **ANotes Exclusive License**.
+By contributing, you agree that your code will be licensed under the **Quillon Exclusive License**.
 
-Thank you for being part of the **ANotes** community! 💜
+Thank you for being part of the **Quillon** community! 💜
